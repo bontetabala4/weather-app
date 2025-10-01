@@ -11,8 +11,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "typecheck": "tsc --noEmit",
-    "build:frontend": "cd ../frontend && npm run build && rm -rf public && cp -r dist ../backend/public",
-    "start": "npm run build:frontend && node ace serve --watch && node bin/server.js"
+    "build:frontend": "node scripts/build-frontend.js",
+    "start": "npm run build:frontend && node ace serve --watch"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
@@ -42,6 +42,7 @@
     "@japa/plugin-adonisjs": "^4.0.0",
     "@japa/runner": "^4.2.0",
     "@swc/core": "1.11.24",
+    "@types/cross-spawn": "^6.0.6",
     "@types/node": "^22.15.18",
     "eslint": "^9.26.0",
     "hot-hook": "^0.4.0",
@@ -55,6 +56,7 @@
     "@adonisjs/cors": "^2.2.1",
     "@adonisjs/static": "^1.1.1",
     "axios": "^1.12.2",
+    "cross-spawn": "^7.0.6",
     "reflect-metadata": "^0.2.2"
   },
   "hotHook": {
