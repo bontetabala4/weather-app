@@ -5,13 +5,14 @@
   "type": "module",
   "license": "UNLICENSED",
   "scripts": {
-    "start": "node bin/server.js",
     "build": "node ace build",
     "dev": "node ace serve --hmr",
     "test": "node ace test",
     "lint": "eslint .",
     "format": "prettier --write .",
-    "typecheck": "tsc --noEmit"
+    "typecheck": "tsc --noEmit",
+    "build:frontend": "cd ../frontend && npm run build && rm -rf public && cp -r dist ../backend/public",
+    "start": "npm run build:frontend && node ace serve --watch && node bin/server.js"
   },
   "imports": {
     "#controllers/*": "./app/controllers/*.js",
