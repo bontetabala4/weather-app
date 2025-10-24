@@ -1,73 +1,128 @@
-# React + TypeScript + Vite
+🌤️ Weather App
+Une application météo moderne et élégante développée avec React, TypeScript et Tailwind CSS, affichant par défaut la météo de Kinshasa, République Démocratique du Congo.
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+✨ Fonctionnalités
+🌍 Météo en Temps Réel
+Affichage des conditions météorologiques actuelles
 
-Currently, two official plugins are available:
+Température en Celsius ou Fahrenheit
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+Données détaillées : humidité, vent, pression, visibilité
 
-## React Compiler
+Localisation automatique avec fallback sur Kinshasa
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+📊 Prévisions Avancées
+Prévisions horaires sur 24 heures
 
-## Expanding the ESLint configuration
+Prévisions sur 7 jours avec tendances
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+Graphiques de température et probabilités de pluie
 
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
+Résumé météorologique de la semaine
 
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
+🗺️ Carte Interactive
+Carte mondiale avec Leaflet
 
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Marqueurs pour les villes populaires
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+Vue globe et vue détaillée
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
+Recherche de villes
 
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+Thèmes : Clair, Sombre ou Auto
+
+Unités : Celsius ou Fahrenheit
+
+Langues : Français, English, Lingala, Kikongo, Swahili, Arabe
+
+Intervalles de mise à jour personnalisables
+
+📱 Interface Moderne
+Design responsive (mobile, tablette, desktop)
+
+Animations fluides avec Framer Motion
+
+Mode glassmorphism et backdrop blur
+
+Navigation intuitive avec sidebar
+
+🚀 Technologies Utilisées
+Frontend: React 18, TypeScript
+
+Styling: Tailwind CSS
+
+Animations: Framer Motion
+
+Cartes: Leaflet, OpenStreetMap
+
+API: OpenWeatherMap
+
+Build Tool: Vite
+
+Icons: Emojis natifs
+
+🎯 Utilisation
+Première Ouverture
+L'application détecte automatiquement votre position
+
+Si la géolocalisation échoue, Kinshasa s'affiche par défaut
+
+Les données météo se chargent automatiquement
+
+Navigation
+Section Météo : Conditions actuelles et prévisions
+
+Section Carte : Carte mondiale interactive
+
+Section Tableau de bord : Statistiques et export de données
+
+Section Paramètres : Personnalisation de l'application
+
+Recherche
+Utilisez la barre de recherche pour trouver n'importe quelle ville
+
+Les résultats incluent les villes populaires
+
+Support des coordonnées GPS
+
+🌐 API et Services
+OpenWeatherMap
+L'application utilise l'API OpenWeatherMap pour :
+
+Données météo actuelles
+
+Prévisions sur 5 jours
+
+Géocodage des villes
+
+
+Multilingue
+Français 
+
+English 
+
+Lingala 
+
+Kikongo
+
+Swahili
+
+Arabe
+
+🤝 Contribution
+Les contributions sont les bienvenues !
+
+
+📄 Licence
+Ce projet est sous licence MIT. Voir le fichier LICENSE pour plus de détails.
+
+👨‍💻 Auteur
+Bonté Tabala
+
+GitHub: @bontetabala4
+
+Projet: Weather App
+
+⭐ N'oubliez pas de donner une étoile au projet si vous l'aimez !
+
+Développé avec ❤️ en République Démocratique du Congo    
